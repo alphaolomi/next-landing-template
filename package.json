@@ -1,0 +1,63 @@
+{
+  "name": "jasiriinc-landingpage",
+  "version": "0.0.1",
+  "private":true,
+  "scripts": {
+    "dev": "next --port 8080",
+    "build": "next build",
+    "start": "next start",
+    "build-stats": "ANALYZE=true npm run build",
+    "export": "next export -o dist",
+    "build-prod": "run-s clean build export",
+    "clean": "rimraf .next dist",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",    
+    "lint-fix": "eslint --fix --ext .js,.jsx,.tsx src/"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "^10.2.3",
+    "next-seo": "^4.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-jsx-plugin-postcss": "^4.0.1"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^10.2.3",
+    "@tailwindcss/jit": "^0.1.18",
+    "@types/classnames": "^2.3.1",
+    "@types/node": "^15.6.1",
+    "@types/react": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "autoprefixer": "^10.2.6",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.0",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.1.2",
+    "typescript": "^4.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "eslint"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "license": "MIT"
+}
