@@ -17,7 +17,7 @@ const FooterCopyright = () => (
     {' '}
     by
     {' '}
-    <a href="https://alphaolomi.com">Alpha Olomi</a>    
+    <a href="https://alphaolomi.com">Alpha Olomi</a>
     <style jsx>
       {`
         .footer-copyright :global(a) {

@@ -12,8 +12,8 @@ const Base = () => (
     <Meta title={Config.title} description={Config.description} />
     <Hero />
     <>
-    <hr className="text-color-black mx-2"/>
-    </>    
+      <hr className="text-color-black mx-2" />
+    </>
     <VerticalFeatures />
     <Banner />
     <Footer />

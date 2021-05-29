@@ -5,7 +5,7 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-  id="solutions"
+    id="solutions"
     title="Solutions"
     description="Short list of solutions we provide."
   >
@@ -22,7 +22,7 @@ const VerticalFeatures = () => (
       imageAlt="Tax Evaluation Engine Image"
       reverse
     />
-  
+
   </Section>
 );
 

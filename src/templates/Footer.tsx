@@ -22,8 +22,6 @@ const Footer = () => (
               </a>
             </Link>
 
-           
-
             <Link href="https://twitter.com/Jasiri-Inc">
               <a>
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -31,8 +29,6 @@ const Footer = () => (
                 </svg>
               </a>
             </Link>
-
-         
 
             <Link href="mailto:hello@jasiriinc.tech">
               <a>
@@ -42,7 +38,6 @@ const Footer = () => (
               </a>
             </Link>
 
-           
           </>
         )}
       >
@@ -56,7 +51,7 @@ const Footer = () => (
             <a>Contact Us</a>
           </Link>
         </li>
-       
+
         <li>
           <Link href="https://github.com/Jasiri-Inc">
             <a>GitHub</a>

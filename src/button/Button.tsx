@@ -3,8 +3,8 @@ import React from 'react';
 import className from 'classnames';
 
 type IButtonProps = {
-  xl?: boolean;  
-  block?: boolean;  
+  xl?: boolean;
+  block?: boolean;
   children: string;
 };
 

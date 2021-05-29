@@ -17,7 +17,7 @@ const Hero = () => (
           <Link href="https://github.com/Jasiri-Inc">
             <a>GitHub</a>
           </Link>
-        </li>       
+        </li>
       </NavbarTwoColumns>
     </Section>
 
@@ -25,8 +25,8 @@ const Hero = () => (
       <HeroOneButton
         title={(
           <>
-            {'Technology for Innovators'}
-        
+            Technology for Innovators
+
           </>
         )}
         description="Inspiring Tech Needs for Business."
