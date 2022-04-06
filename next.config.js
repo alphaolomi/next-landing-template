@@ -1,17 +1,10 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
-
-const baseUrl = '';
-
-module.exports = withBundleAnalyzer({
-  poweredByHeader: false,
-  trailingSlash: true,
-  basePath: baseUrl,
-  env: {
-    baseUrl: baseUrl,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  future: {
-    webpack5: true,
-  },
-});
+}
+
+module.exports = nextConfig

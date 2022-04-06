@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
@@ -12,13 +12,13 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="MbioSoft"
       description="Create an experience that stays forever. MbioSoft is easy to set-up, complete end-to-end race, and marathon management platform that helps marathon organizers deliver great experiences to the runners.."
-      image="/assets/images/finish_line.svg"
+      image="/images/finish_line.svg"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
       title="Tax Evaluation Engine"
       description="A tax engine can help your company scale up confidently, reduce risk, and improve accuracy on tax calculations for VAT, GST, sales and use, and so much more.."
-      image="/assets/images/calculator.svg"
+      image="/images/calculator.svg"
       imageAlt="Tax Evaluation Engine Image"
       reverse
     />

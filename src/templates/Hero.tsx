@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import Link from 'next/link';
 
@@ -33,7 +33,7 @@ const Hero = () => (
         button={(
           <Link href="#solutions">
             <a>
-              <Button xl>Learn More</Button>
+              <Button xl primary>Learn More</Button>
             </a>
           </Link>
         )}

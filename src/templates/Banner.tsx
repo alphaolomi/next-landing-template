@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import Link from 'next/link';
 
@@ -9,12 +9,14 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Experience a live customized demostration, get answers to your specific questions"
+      title={<>Experience a live customized demostration,<br/> get answers to your specific questions</>}
+    
+
       subtitle="Request a demo."
       button={(
         <Link href="/contact">
           <a>
-            <Button>Get Started</Button>
+            <Button primary md>Request a demo</Button>
           </a>
         </Link>
       )}

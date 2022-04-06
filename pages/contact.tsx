@@ -1,10 +1,8 @@
-import React from 'react';
-
-import { Button } from '../button/Button';
-import { Meta } from '../layout/Meta';
-import { Footer } from '../templates/Footer';
-import { HeroMin } from '../templates/HeroMin';
-import { Config } from '../utils/Config';
+import { Button } from '../src/button/Button';
+import { Meta } from '../src/layout/Meta';
+import { Footer } from '../src/templates/Footer';
+import { HeroMin } from '../src/templates/HeroMin';
+import { Config } from '../src/utils/Config';
 
 const Contact = () => (
   <div className="antialiased text-gray-600">
