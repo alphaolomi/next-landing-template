@@ -1,7 +1,4 @@
-import React from 'react';
-
-import className from 'classnames';
-
+import Image from "next/image";
 type IVerticalFeatureRowProps = {
   title: string;
   description: string;
@@ -10,10 +7,18 @@ type IVerticalFeatureRowProps = {
   reverse?: boolean;
 };
 
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(" ");
+}
+
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
-  const verticalFeatureClass = className('mt-20', 'flex', 'flex-wrap', 'items-center', {
-    'flex-row-reverse': props.reverse,
-  });
+  const verticalFeatureClass = classNames(
+    "mt-20",
+    "flex",
+    "flex-wrap",
+    "items-center",
+    props.reverse ? "flex-row-reverse" : ""
+  );
 
   return (
     <div className={verticalFeatureClass}>
@@ -23,7 +28,13 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="w-full sm:w-1/2 p-6">
-        <img src={`${process.env.baseUrl}${props.image}`} alt={props.imageAlt} />
+        <Image
+          layout="responsive"
+          width={360}
+          height={360}
+          src={props.image}
+          alt={props.imageAlt}
+        />
       </div>
     </div>
   );

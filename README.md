@@ -1,24 +1,22 @@
-# [Jasiri Inc Landing page](https://jasiri-inc.github.io/)
-
+# Next Landing page
 
 ### Built with
 
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
+- 🔥 [Next.js v12.1](https://nextjs.org) for Static Site Generator
+- ⚛️ [React 18](https://reactjs.org) for the frontend
+- 🎨 Styling with [Tailwind CSS](https://tailwindcss.com)
 - 💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
 - 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
 - ✏️ Linter with [ESLint](https://eslint.org)
 - 🛠 Code Formatter with [Prettier](https://prettier.io)
 - 🦊 SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- 🌈 Include a FREE theme
-- 💯 Maximize lighthouse score
-
+- 🌈 Include UI components theme
+- 💯 Max lighthouse score
 
 ### Dev Requirements
 
 - Node.js and npm/yarn
-
 
 ### Contributions
 

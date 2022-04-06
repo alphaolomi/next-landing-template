@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import Image from 'next/image';
 
@@ -13,8 +13,7 @@ const Logo = (props: ILogoProps) => {
 
   return (
     <span className={`text-gray-900 inline-flex items-center ${fontStyle}`}>
-
-      <Image src="/assets/images/logo.svg" width={50} height={50} alt="Jasiri Logo" />
+      <Image layout={'responsive'} src="/images/logo.jpeg" width={100} height={100} alt="Jasiri Logo" />
       {Config.site_name}
     </span>
   );

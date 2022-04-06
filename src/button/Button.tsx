@@ -1,53 +1,34 @@
-import React from 'react';
-
-import className from 'classnames';
-
+// import classNames from 'classnames';
 type IButtonProps = {
   xl?: boolean;
+  md?: boolean;
   block?: boolean;
   children: string;
+  primary?: boolean;
 };
 
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(" ");
+}
+
 const Button = (props: IButtonProps) => {
-  const btnClass = className({
-    btn: true,
-    'btn-xl': props.xl,
-    'btn-block': props.block,
-    'btn-base': !props.xl,
-    'btn-primary': true,
-  });
+  const btnClass = classNames(
+    "inline-block rounded-md text-center",
+    props.xl ? "font-extrabold text-xl py-4 px-6" : "",
+    props.md ? "w-48" : "",
+    props.block ? "w-full" : "",
+    !props.xl
+      ? "text-lg font-semibold py-2 px-4"
+      : "font-extrabold text-xl py-4 px-6",
+    props.primary
+      ? "btn-primary text-white bg-primary-500 hover:bg-primary-600"
+      : ""
+  );
 
   return (
-    <div className={btnClass}>
+    <button type={"button"} className={btnClass}>
       {props.children}
-
-      <style jsx>
-        {`
-          .btn {
-            @apply inline-block rounded-md text-center;
-          }
-
-          .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
-          }
-
-          .btn-xl {
-            @apply font-extrabold text-xl py-4 px-6;
-          }
-          .btn-block {
-            @apply w-full
-          }
-
-          .btn-primary {
-            @apply text-white bg-primary-500;
-          }
-
-          .btn-primary:hover {
-            @apply bg-primary-600;
-          }
-        `}
-      </style>
-    </div>
+    </button>
   );
 };
 
